@@ -1,0 +1,32 @@
+import time
+print('Welcome to calculator!')
+time.sleep(1.5)
+print('Pick your operation!')
+print('+')
+time.sleep(.5)
+print('-')
+time.sleep(.5)
+print('*')
+time.sleep(.5)
+print('/')
+operation = input(': ')
+if operation == '+':
+    first_number = int(input('First number: '))
+    second_number = int(input(f'{first_number} + ?: '))
+    calculate = int(first_number + second_number)
+    print(f'Equals: {calculate}')
+if operation == '-':
+    first_number = int(input('First number: '))
+    second_number = int(input(f'{first_number} - ?: '))
+    calculate = int(first_number - second_number)
+    print(f'Equals: {calculate}')
+if operation == '*':
+    first_number = int(input('First number: '))
+    second_number = int(input(f'{first_number} * ?: '))
+    calculate = int(first_number * second_number)
+    print(f'Equals: {calculate}')
+if operation == '/':
+    first_number = int(input('First number: '))
+    second_number = int(input(f'{first_number} / ?: '))
+    calculate = int(first_number / second_number)
+    print(f'Equals: {calculate}')
